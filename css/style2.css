@@ -1,0 +1,351 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Quintessential', cursive;
+}
+
+body {
+    /* .parallax */
+    background-image: url("../assets/img/dark.jpg");
+    background-attachment: fixed;
+    /* el secreto del paralax */
+    background-position: center;
+    /* como va estar ubicado */
+    background-repeat: no-repeat;
+    /* si es necesario repetir la imagen */
+    background-size: cover;
+    /* tamaño de la imagen  */
+    margin-bottom: 50px;
+    /* propiedad de box modelin  */
+}
+
+ul {
+    display: flex;
+    padding-top: 10px;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+}
+
+a {
+    color: silver;
+    text-decoration: none;
+}
+
+
+/* Efecto del menu */
+
+li a:hover {
+    background: goldenrod;
+    color: black;
+    padding: 7px 10px 7px 10px;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+table {
+    margin: auto;
+    color: goldenrod;
+}
+
+.form {
+    color: goldenrod;
+}
+
+.grid_body {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+header {
+    grid-area: header;
+    padding: 10px;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.navFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.header_grid {
+    display: grid;
+    grid-template-areas: "logo navi" "fondogrid fondogrid";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px 200px;
+}
+
+.logo {
+    grid-area: logo;
+    z-index: 1;
+}
+
+.navi {
+    grid-area: navi;
+}
+
+.fondogrid {
+    grid-area: fondogrid;
+}
+
+.imgFondo {
+    background-image: url("../assets/img/fondotop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 61px;
+}
+
+.tituloImg {
+    color: goldenrod;
+}
+
+.videopago {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "video" "pago";
+    grid-template-rows: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.video {
+    grid-area: video;
+    margin: 20px;
+    padding: 10px;
+}
+
+.pago {
+    grid-area: pago;
+    margin: 10px;
+    padding-bottom: 35px;
+}
+
+.quecompramos {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+.imgqc {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.precios {
+    padding: 20px;
+}
+
+.mainsucursales {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+.suc {
+    padding: 10px;
+}
+
+.maincontacto {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+.ubica {
+    margin-top: 30px;
+}
+
+
+/* Media query mobile */
+
+@media screen and (max-width:768px) {
+    h1 {
+        color: gold;
+    }
+    .cuadro {
+        display: grid;
+        grid-template-areas: "encabezado" "oro" "textOro" "plata" "textplata" "centenario" "textCente" "onza" "textOnza" "monedas" "textMon";
+        grid-template-columns: auto;
+        grid-template-rows: repeat(11, auto);
+        text-align: center;
+    }
+    .encabezado {
+        grid-area: encabezado;
+        text-align: center;
+    }
+    .oro {
+        grid-area: oro;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .plata {
+        grid-area: plata;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .centenario {
+        grid-area: centenario;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .onza {
+        grid-area: onza;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .textOro {
+        grid-area: textOro;
+        padding: 15px;
+    }
+    .textplata {
+        grid-area: textplata;
+        padding: 15px;
+    }
+    .textOnza {
+        grid-area: textOnza;
+        padding: 15px;
+    }
+    .textCente {
+        grid-area: textCente;
+        padding: 15px;
+    }
+    .monedas {
+        grid-area: monedas;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .textMon {
+        grid-area: textMon;
+        padding: 15px;
+    }
+}
+
+
+/* Media query desktop */
+
+@media screen and (min-width:769px) {
+    .cuadro {
+        display: grid;
+        grid-template-areas: "encabezado encabezado" "oro plata" "textOro textplata" "centenario onza" "textCente textOnza" "monedas monedas" "textMon textMon";
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(7, auto);
+        text-align: center;
+    }
+    .encabezado {
+        grid-area: encabezado;
+        text-align: center;
+    }
+    .oro {
+        grid-area: oro;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .plata {
+        grid-area: plata;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .centenario {
+        grid-area: centenario;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .onza {
+        grid-area: onza;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .textOro {
+        grid-area: textOro;
+        padding-bottom: 15px;
+    }
+    .textplata {
+        grid-area: textplata;
+        padding-bottom: 15px;
+    }
+    .textOnza {
+        grid-area: textOnza;
+    }
+    .textCente {
+        grid-area: textCente;
+    }
+    .monedas {
+        grid-area: monedas;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .textMon {
+        grid-area: textMon;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Degradacion de color en fondo */
+
+
+/* footer { 
+    background-image: linear-gradient(to right, black, gray);
+}*/
+
+
+/* transicion de fondo */
+
+.transition {
+    height: 150px;
+    transition: all 2s;
+}
+
+.transition:hover {
+    height: 170px;
+}
+
+
+/* Anamicion de translate */
+
+
+/*  
+@keyframes animacionlogo {
+    0% {
+        transform: translateX(900px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+.animacion {
+    animation: animacionlogo;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}*/
