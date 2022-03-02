@@ -1,0 +1,97 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Quintessential', cursive;
+}
+
+body {
+    /* .parallax */
+    background-image: url("../assets/img/dark.jpg");
+    background-attachment: fixed;
+    /* el secreto del paralax */
+    background-position: center;
+    /* como va estar ubicado */
+    background-repeat: no-repeat;
+    /* si es necesario repetir la imagen */
+    background-size: cover;
+    /* tamaño de la imagen  */
+    margin-bottom: 50px;
+    /* propiedad de box modelin  */
+}
+
+.lista {
+    padding: 10px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    padding-top: 10px;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+}
+
+a {
+    color: silver;
+    text-decoration: none;
+}
+
+
+/* Efecto del menu */
+
+li a:hover {
+    background: goldenrod;
+    color: black;
+    padding: 7px 10px 7px 10px;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+table {
+    margin: auto;
+    color: goldenrod;
+}
+
+.form {
+    color: goldenrod;
+}
+
+.imgFondo {
+    background-image: url("../assets/img/fondotop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 61px;
+}
+
+.tituloImg {
+    color: goldenrod;
+}
+
+.transition {
+    height: 150px;
+    transition: all 2s;
+}
+
+.transition:hover {
+    height: 170px;
+}
